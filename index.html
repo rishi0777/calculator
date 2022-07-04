@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calc">
+      <h1>CALCULATOR</h1>
+      <div class="input">
+        <div id="num1" class="label"></div>
+        <input id="num2" class="textbox" type="text" required />
+      </div>
+
+      <div class="functionality">
+        <div class="buttonBox">
+          <div class="row">
+            <button id="1" class="number" onclick="writeNumber(1)">1</button>
+            <button id="2" class="number" onclick="writeNumber(2)">2</button>
+            <button id="3" class="number" onclick="writeNumber(3)">3</button>
+            <button id="add" class="number" onclick="writeOperation('+')">
+              +
+            </button>
+          </div>
+          <div class="row">
+            <button id="4" class="number" onclick="writeNumber(4)">4</button>
+            <button id="5" class="number" onclick="writeNumber(5)">5</button>
+            <button id="6" class="number" onclick="writeNumber(6)">6</button>
+            <button id="sub" class="number" onclick="writeOperation('-')">
+              -
+            </button>
+          </div>
+          <div class="row">
+            <button id="7" class="number" onclick="writeNumber(7)">7</button>
+            <button id="8" class="number" onclick="writeNumber(8)">8</button>
+            <button id="9" class="number" onclick="writeNumber(9)">9</button>
+            <button id="prod" class="number" onclick="writeOperation('*')">
+              *
+            </button>
+          </div>
+          <div class="row">
+            <button id="dot" class="number" onclick="writeOperation('/')">
+              /
+            </button>
+            <button id="0" class="number" onclick="writeNumber(0)">0</button>
+            <button id="mod" class="number" onclick="writeOperation('%')">
+              %
+            </button>
+            <button id="prod" class="number" onclick="writeOperation('^')">
+              ^
+            </button>
+          </div>
+        </div>
+
+        <div class="result">
+          <button class="equalTo" onclick="result('')">=</button>
+          <button class="clear" onclick="erase()">AC</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

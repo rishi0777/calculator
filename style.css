@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #111111;
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #fff;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.label {
+  /*defined height in order to remove cumulative layout shifting(cls) helps in SEO's*/
+  height: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.textbox {
+  width: 30rem;
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 1.1rem;
+  border: 0;
+  padding: 0.6rem;
+}
+
+.functionality {
+  margin-top: 0.8rem;
+  display: flex;
+  height: 14rem;
+  width: 30rem;
+}
+.buttonBox {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.8;
+}
+.result {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  font-weight: bold;
+  height: 3rem;
+  width: 5.5rem;
+  border: none;
+  transition: 500ms ease-in-out;
+}
+
+.equalTo,
+.clear {
+  font-weight: bold;
+  margin-left: 0.64rem;
+  height: 6.68rem;
+  width: 5.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1rem;
+  padding: 1.5%;
+  border: none;
+  border-width: 0.2rem;
+
+  transition: 500ms ease-in-out;
+}
+.equalTo:hover,
+.clear:hover,
+.number:hover {
+  color: #fff;
+  background-color: #d1544d;
+}
